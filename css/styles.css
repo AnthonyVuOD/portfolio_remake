@@ -1,0 +1,157 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+#landingPage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/landingPic.jpeg);
+  background-size: cover;
+  background-position: center; }
+  #landingPage img {
+    position: fixed;
+    width: 70px;
+    height: 50px;
+    top: 65px;
+    right: 40px;
+    z-index: 2;
+    -webkit-filter: drop-shadow(3px 4px 5px black);
+    filter: drop-shadow(3px 4px 5px black); }
+  #landingPage #landingDiv {
+    position: fixed;
+    bottom: 15%;
+    margin-left: 60%;
+    z-index: 0; }
+    #landingPage #landingDiv h1 {
+      font-size: 45px;
+      font-family: "Raleway";
+      color: #363636; }
+    #landingPage #landingDiv h2 {
+      font-size: 25px;
+      margin-top: -37px;
+      font-family: "Raleway";
+      color: #363636; }
+
+.middleDivs {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .middleDivs .innerMiddleDivs {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    top: 50px; }
+    .middleDivs .innerMiddleDivs h3 {
+      margin: 0;
+      padding: 0;
+      font-family: "Josefin Sans";
+      font-size: 45px; }
+
+#about {
+  background-color: #e3e3e3; }
+  #about .innerMiddleDivs h3 {
+    color: #363636; }
+  #about .innerMiddleDivs p {
+    font-size: 25px;
+    font-family: "Raleway";
+    color: #363636;
+    margin: 40px 30px 0px 30px; }
+  #about .innerMiddleDivs #resume {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-family: "Raleway";
+    color: #363636;
+    background-color: #e3e3e3;
+    border: 1px solid #363636;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    margin: 70px auto 0px auto;
+    transition: .75s; }
+    #about .innerMiddleDivs #resume:hover {
+      background-color: #363636;
+      color: #e3e3e3;
+      transition: .75s; }
+
+#portfolio {
+  background-color: #363636; }
+  #portfolio h3 {
+    color: #e3e3e3; }
+  #portfolio .innerMiddleDivs .portfolioLinksWrapper {
+    width: 100%;
+    margin: 30px auto; }
+    #portfolio .innerMiddleDivs .portfolioLinksWrapper .portfolioLinks {
+      width: 44%;
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+      float: left;
+      margin: 3%;
+      transition: 0.30s; }
+      #portfolio .innerMiddleDivs .portfolioLinksWrapper .portfolioLinks:hover {
+        transform: scale(1.02);
+        transition: 0.30s; }
+  #portfolio .innerMiddleDivs #clearingElement {
+    clear: both; }
+
+#contact {
+  background-color: #e3e3e3;
+  min-height: 70vh; }
+  #contact h3 {
+    color: #363636; }
+  #contact #contactElementsContainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 35px; }
+    #contact #contactElementsContainer p, #contact #contactElementsContainer a {
+      font-size: 25px;
+      font-family: "Raleway";
+      color: #363636;
+      margin: 0px;
+      text-decoration: none; }
+      #contact #contactElementsContainer p span, #contact #contactElementsContainer a span {
+        text-decoration: underline; }
+    #contact #contactElementsContainer .link {
+      transition: 0.75s; }
+      #contact #contactElementsContainer .link:hover {
+        transition: 0.75s;
+        filter: opacity(0.65); }
+
+#contactPhone {
+  top: 40px;
+  width: 100%;
+  margin: 5% auto; }
+
+#contactIcons {
+  margin: 0 auto;
+  width: 100%;
+  top: 150px; }
+  #contactIcons .icons {
+    width: 50px;
+    padding: 0 40px;
+    filter: opacity(75%);
+    transition: 0.75s; }
+    #contactIcons .icons:hover {
+      filter: opacity(50%);
+      transition: 0.75s; }
+
+#contactEmail {
+  bottom: 40px;
+  width: 100%;
+  margin: 5% auto 0% auto; }
+
+#copyright {
+  position: absolute;
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #363636;
+  bottom: 5px;
+  right: 50px; }

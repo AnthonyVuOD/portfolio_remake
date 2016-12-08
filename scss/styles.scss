@@ -1,0 +1,195 @@
+$primary-font:"Raleway";
+$secondary-font:"Josefin Sans";
+$primary-color: #e3e3e3; //light gray
+$secondary-color: #363636; // dark gray
+
+body{
+  padding:0;
+  margin:0;
+}
+#landingPage{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/landingPic.jpeg);
+  background-size: cover;
+  background-position: center;
+  img{
+    position: fixed;
+    width: 70px;
+    height: 50px;
+    top: 65px;
+    right: 40px;
+    z-index: 2;
+    -webkit-filter: drop-shadow(3px 4px 5px  black);
+    filter: drop-shadow(3px 4px 5px  black);
+  }
+  #landingDiv{
+    position: fixed;
+    bottom: 15%;
+    margin-left: 60%;
+    z-index: 0;
+    h1{
+      font-size: 45px;
+      font-family: $primary-font;
+      color: $secondary-color;
+    }
+    h2 {
+      font-size: 25px;
+      margin-top: -37px;
+      font-family: $primary-font;
+      color: $secondary-color;
+    }
+  }
+}
+.middleDivs{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  .innerMiddleDivs{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    top:50px;
+    h3{
+      margin: 0;
+      padding: 0;
+      font-family: $secondary-font;
+      font-size: 45px;
+    }
+  }
+}
+#about{
+  background-color: $primary-color;
+  .innerMiddleDivs{
+    h3{
+      color: $secondary-color;
+    }
+    p{
+      font-size: 25px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      margin: 40px 30px 0px 30px;
+    }
+    #resume{
+      width:150px;
+      height: 35px;
+      font-size: 20px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      background-color: $primary-color;
+      border: 1px solid #363636;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 10px;
+      display: block;
+      margin: 70px auto 0px auto;
+      transition: .75s;
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+        transition: .75s;
+      }
+    }
+  }
+}
+#portfolio{
+  background-color: $secondary-color;
+  h3 {
+    color: $primary-color;
+  }
+  .innerMiddleDivs{
+    // background-color: red;
+    .portfolioLinksWrapper{
+      width: 100%;
+      // height: 500px;
+      // background-color: yellow;
+      margin: 30px auto;
+      .portfolioLinks{
+        width: 44%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        float: left;
+        margin: 3% ;
+        transition: 0.30s;
+        &:hover {
+          transform: scale(1.02);
+          transition: 0.30s;
+        }
+      }
+    }
+    #clearingElement{
+      clear: both;
+    }
+  }
+}
+
+#contact{
+  background-color: $primary-color;
+  min-height: 70vh;
+  h3{
+    color: $secondary-color;
+  }
+  #contactElementsContainer{
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 35px;
+    // background-color: red;
+    p, a{
+      font-size: 25px;
+      font-family: $primary-font;
+      color: $secondary-color;
+      margin:0px;
+      text-decoration: none;
+      span{
+        text-decoration: underline;
+      }
+    }
+    .link {
+      transition: 0.75s;
+      &:hover{
+        transition: 0.75s;
+        filter: opacity(.65);
+      }
+    }
+  }
+}
+#contactPhone{
+  top: 40px;
+  width: 100%;
+  margin: 5% auto;
+}
+#contactIcons{
+  margin: 0 auto;
+  width: 100%;
+  top:150px;
+  .icons{
+    width: 50px;
+    padding: 0 40px;
+    filter: opacity(75%);
+    transition: 0.75s;
+    &:hover {
+      filter: opacity(50%);
+      transition: 0.75s;
+    }
+  }
+}
+#contactEmail{
+  bottom: 40px;
+  width: 100%;
+  margin: 5% auto 0% auto;
+}
+#copyright {
+  position: absolute;
+  font-size: 15px;
+  font-family: $primary-font;
+  color: $secondary-color;
+  bottom: 5px;
+  right: 50px;
+}
