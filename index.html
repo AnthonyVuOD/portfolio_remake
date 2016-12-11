@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Anthony Vu</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- <script src="https://unpkg.com/vue/dist/vue.js" type="text/javascript"></script>
     <script src="js/portfolio.js" type="text/javascript"></script> -->
   </head>
-  <body>
-    <div id="vue">
-    </div>
+  <body >
 
-      <div class="" id="landingPage">
-        <img src="/images/AVlogo2.png">
+      <div class="" id="landingPage" @click="parallax">
+        <img src="images/AVlogo2.png">
         <div id="landingDiv">
           <h1>ANTHONY VU</h1>
-          <h2>Placeholder</h2>
+          <!-- <h2>{{message}}</h2> -->
         </div>
       </div>
 
@@ -60,8 +58,8 @@
               <a class="link" href="tel:727-631-2638">727-631-2638</a>
             </div>
             <div id="contactIcons">
-              <a href="#"><img class="icons" src="../images/linkedInIcon.png" alt="" target="_blank"></a>
-              <a href="#"><img class="icons" src="../images/gitHubIcon.png" alt="" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/anthony-vu-257a417?trk=hp-identity-photo" target="_blank"><img class="icons" src="images/linkedInIcon.png"></a>
+              <a href="https://github.com/AnthonyVuOD" target="_blank"><img class="icons" src="images/gitHubIcon.png"></a>
             </div>
             <div id="contactEmail">
               <p><span>e-mail</span></p>
@@ -71,7 +69,6 @@
         </div>
         <p id="copyright">&copy; 2016 Anthony Vu</p>
       </div>
-
 
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="js/portfolio.js"></script>

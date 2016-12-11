@@ -1,8 +1,20 @@
 new Vue({
-  el: '#vue',
-  data: {
-    message: 'Hello Vue.js!'
+  el: '#landingPage',
+  methods: {
+    parallax: function (){
+      var landingDiv = document.getElementById('landingDiv');
+      // landingDiv.style.bottom = window.pageYOffset * .2 + "px";
+      console.log("hello");
+    }
+  },
+  ready: function(){
+     window.addEventListener("scroll", function(){
+       console.log("bello");
+     });
   }
+  // ready() {
+  //   window.addEventListener("scroll", parallax, false);
+  // }
 })
 
 new Vue ({
