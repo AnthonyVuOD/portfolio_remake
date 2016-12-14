@@ -25,14 +25,14 @@ body{
     position: fixed;
     width: 70px;
     height: 50px;
-    top: 65px;
+    top: 55px;
     right: 40px;
     z-index: 2;
     @include drop-shadow;
   }
   #landingDiv{
     position: fixed;
-    bottom: 200px;
+    bottom: 20%;
     margin-left: 55%;
     z-index: 0;
     width: 100%;
@@ -113,8 +113,9 @@ body{
       width: 100%;
       margin: 30px auto;
       .portfolioLinks{
+        position: relative;
         width: 44%;
-        height: 300px;
+        height: 250px;
         background-position: center;
         background-size: cover;
         float: left;
@@ -123,6 +124,23 @@ body{
         -webkit-box-shadow: 4px 4px 10px 0px rgba(38,38,38,1);
         -moz-box-shadow: 4px 4px 10px 0px rgba(38,38,38,1);
         box-shadow: 4px 4px 10px 0px rgba(38,38,38,1);
+        .projectName {
+          width: 100%;
+          position: absolute;
+          text-decoration: none;
+          text-align: center;
+          margin: auto;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(227,227,227, 0.5);
+          h2 {
+            color: #212121;
+            font-size: 1.1em;
+            font-family: $primary-font;
+            margin: 3px auto;
+          }
+        }
         &:hover {
           transform: scale(1.02);
           transition: 0.30s;
@@ -198,10 +216,24 @@ body{
   font-family: $primary-font;
   color: $secondary-color;
   bottom: 5px;
-  right: 50px;
+  right: 30px;
 }
 
 @media screen and (max-width: 1000px){
+  #landingPage{
+    #landingDiv{
+      position: fixed;
+      bottom: 25%;
+      margin-left: 45%;
+      h1{
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1em;
+        margin-top: -37px;
+      }
+    }
+  }
   #portfolio{
     .innerMiddleDivs{
       .portfolioLinksWrapper{
@@ -211,6 +243,9 @@ body{
           width: 94%;
           height: 250px;
           margin: 3% ;
+          &:hover {
+            transform: none;
+          }
         }
       }
     }
@@ -232,10 +267,60 @@ body{
     }
     #landingDiv{
       position: absolute;
-      bottom: 200px;
-      margin-left: 45%;
+      // bottom: 20%;
+      margin-left: 47%;
+      width: 40%;
+      h1{
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1em;
+        margin-top: -37px;
+      }
+    }
+  }
+  .middleDivs{
+    .innerMiddleDivs{
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 65px;
+      top:50px;
+      h3{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        font-size: 1.8em;
+      }
+    }
+  }
+  #about{
+    .innerMiddleDivs{
+      #resume{
+        width:125px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 20px;
+  }
+  #landingPage{
+    img{
+      position: absolute;
+      width: 70px;
+      height: 50px;
+      top: 45px;
+      right: 40px;
+    }
+    #landingDiv{
+      position: absolute;
+      margin-left: 30%;
       z-index: 0;
-      width: 50%;
+      width: 67%;
       h1{
         font-size: 1.8em;
       }

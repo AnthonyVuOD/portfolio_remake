@@ -11,7 +11,7 @@
   </head>
   <body >
 
-      <div class="" id="landingPage" @click="parallax">
+      <div class="" id="landingPage">
         <img src="images/AVlogo2.png">
         <div id="landingDiv">
           <h1>ANTHONY VU</h1>
@@ -42,7 +42,10 @@
                :href="project.link"
                target="_blank"
                :style="{'background-image':'url(' + project.photo + ')'}"
-               >
+            >
+               <div class="projectName">
+                 <h2>{{project.name}}<h2>
+               </div>
             </a>
           </div>
           <div id="clearingElement"></div>
