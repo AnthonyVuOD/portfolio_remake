@@ -1,10 +1,18 @@
 new Vue({
   el: '#landingPage',
   created: function () {
-            window.addEventListener('scroll', function(){
-              console.log('hello');
-            })
+    // parallax function when scrolling when window width > 1000px
+    window.addEventListener('scroll', function(){
+      if(window.innerWidth>1000){
+        var landingDiv = document.getElementById('landingDiv');
+        landingDiv.style.bottom = (window.pageYOffset *.11 + 20)+ "%";
+      }
+    })
+    // reload when resizing window
+    window.onresize = function(){
+       location.reload();
     }
+  }
 })
 
 new Vue ({

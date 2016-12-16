@@ -180,7 +180,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   #landingPage #landingDiv {
-    position: fixed;
+    position: absolute;
     bottom: 25%;
     margin-left: 45%; }
     #landingPage #landingDiv h1 {
@@ -215,7 +215,7 @@ body {
       font-size: 1.8em; }
     #landingPage #landingDiv h2 {
       font-size: 1em;
-      margin-top: -37px; }
+      margin-top: -30px; }
   .middleDivs .innerMiddleDivs {
     width: 90%;
     margin: 0 auto;
@@ -247,9 +247,6 @@ body {
     width: 67%; }
     #landingPage #landingDiv h1 {
       font-size: 1.8em; }
-    #landingPage #landingDiv h2 {
-      font-size: 1em;
-      margin-top: -37px; }
   .middleDivs .innerMiddleDivs {
     width: 100%;
     margin: 0 auto;
