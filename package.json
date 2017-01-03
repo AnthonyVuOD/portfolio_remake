@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio remake",
+  "main": "index.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n/a.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "Anthony Vu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n/a/issues"
+  },
+  "homepage": "https://github.com/n/a#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
